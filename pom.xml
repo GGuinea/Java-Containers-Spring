@@ -7,7 +7,7 @@
     <url>http://maven.apache.org</url>
 
     <groupId>org.example</groupId>
-    <artifactId>KontenerBackend</artifactId>
+    <artifactId>KonteneryBackend</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -43,10 +43,46 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>5.2.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>5.2.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>2.1.8.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.14</version>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>KonteneryBacked</finalName>
+        <finalName>KonteneryBackend</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
