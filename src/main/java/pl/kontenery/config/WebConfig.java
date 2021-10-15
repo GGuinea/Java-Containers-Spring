@@ -11,7 +11,7 @@ import java.util.List;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan("pl.kontenery")
+@ComponentScan(basePackages = "pl.kontenery")
 public class WebConfig implements WebMvcConfigurer {
 
     @Override
